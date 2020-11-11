@@ -5,7 +5,11 @@ class Reviews extends Component {
   render() {
     return (
       <ul>
-        Reviews
+        {this.props.reviews.map(review=>
+        {if(review.restaurantId == this.props.restaurant.id){
+          return <Review review={review} deleteReview={this.props.deleteReview} />
+        }}
+        )}
       </ul>
     );
   }
