@@ -30,7 +30,6 @@ class RestaurantInput extends Component {
       </label>
       <input type="submit"/>
     </form>
-
       </div>
     );
   }
