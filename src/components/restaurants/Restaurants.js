@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Restaurant from './Restaurant'
 
 class Restaurants extends Component {
   render() {
     return(
       <ul>
-        Restaurants Component
+        {console.log(this.props.restaurants)}
       </ul>
     );
   }
